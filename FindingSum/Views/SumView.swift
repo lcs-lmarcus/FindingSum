@@ -34,8 +34,11 @@ struct SumView: View {
                 Stepper(value: $upper, label: {
                     Text ("select first example")
                     })
-                Text ("+")
-                    .font(.system(size: 48))
+                HStack {
+                    Text ("+")
+                        .font(.system(size: 48))
+                        Spacer()
+                }
                 HStack {
                     Spacer()
                     Text ("\(lower)")
@@ -53,31 +56,6 @@ struct SumView: View {
                         .font(.system(size: 70))
                 }
             }
-            
-//            HStack(alignment: .top) {
-// 
-//
-//                Text ("(\(upper))")
-//                    .font(.system(size: 96))
-//                
-// 
-//                Text("2")
-//                    .font(.system(size: 96))
-// 
-//                Text("=")
-//                    .font(.system(size: 96))
-// 
-//                Text("\(squared)")
-//                    .font(.system(size: 96))
-//            }
-//            .lineLimit(1)
-//            .minimumScaleFactor(0.5)
-//            
-//            Stepper(value: $upper, label: {
-//                Text ("select first example")
-//            })
-
-//            
                         
             Spacer()
         }
